@@ -31,5 +31,5 @@ spec:
           persistentVolumeClaim:
             claimName: mongo-storage
         - name: config
-            configMap:
-              name: mongo
+          configMap:
+            name: mongo
