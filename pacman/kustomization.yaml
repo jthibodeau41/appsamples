@@ -6,4 +6,4 @@ resources:
 - pacman-service.yaml
 - pacman-route.yaml
 - pacman-f5-route.yaml
-- pacman-configmap.yaml
+

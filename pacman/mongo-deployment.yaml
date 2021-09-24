@@ -21,15 +21,10 @@ spec:
         - name: mongo
           containerPort: 27017
         volumeMounts:
-          - name: config
-            mountPath: /opt/bitnami/mongodb/conf/mongodb.conf
-            subPath: mongodb.conf
           - name: mongo-db
-            mountPath: /data/db
+            mountPath: /bitnami/mongodb/data/db
       volumes:
         - name: mongo-db
           persistentVolumeClaim:
             claimName: mongo-storage
-        - name: config
-          configMap:
-            name: mongo
+
